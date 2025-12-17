@@ -68,7 +68,7 @@ BlogPulse uses Gemini AI to:
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/BlogPulse.git
+   git clone https://github.com/your-username/BlogPulse.git](https://github.com/Abhishek-Comps-Engineer/BlogPulse-Smart-Blogging-App.git
 
 
 
