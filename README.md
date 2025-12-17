@@ -43,6 +43,13 @@ BlogPulse uses Gemini AI to:
 
 > Gemini API key is securely stored using `local.properties` or `BuildConfig`.
 
+
+---
+## Architecture
+<img width="2816" height="1536" alt="Gemini_Generated_Image_nwyl1wnwyl1wnwyl" src="https://github.com/user-attachments/assets/2804a014-17a0-43c0-857f-e33e998e8bd4" />
+
+
+
 ---
 ## Screenshots 
 
