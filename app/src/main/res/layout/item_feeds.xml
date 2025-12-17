@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp">
+
+
+        <TextView
+            android:id="@+id/title_feed"
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/feed"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textColor="@color/app_dark_blue"
+            android:textSize="@dimen/_16ssp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/header_logo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header_logo"
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/blog_logo"
+            android:layout_marginRight="@dimen/_4sdp"
+            app:civ_border_color="@color/app_light_blue"
+            app:civ_border_width="@dimen/_1sdp"
+            app:layout_constraintEnd_toStartOf="@+id/user_name_feed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/app_white" />
+
+        <TextView
+            android:id="@+id/user_name_feed"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:text="@string/new_nblogger"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dateFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="8dp"
+            android:text="14/20/2025"
+            android:textColor="#BFB2B2"
+            app:layout_constraintEnd_toEndOf="@+id/line_item_feed"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_feed" />
+
+        <TextView
+            android:id="@+id/line_item_feed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:alpha="0.5"
+            android:background="@color/app_black"
+            app:layout_constraintTop_toBottomOf="@+id/dateFeed"
+            tools:layout_editor_absoluteX="7dp" />
+
+        <TextView
+            android:id="@+id/desciption_feed"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/_130sdp"
+            android:maxLines="6"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_item_feed" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/app_dark_blue"
+            android:elevation="@dimen/_10sdp"
+            android:minHeight="@dimen/_48sdp"
+            android:text="@string/read_more"
+            android:textColor="@color/app_white"
+            app:layout_constraintBottom_toBottomOf="@+id/likeIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/likeIcon"
+            app:layout_constraintVertical_bias="0.324" />
+
+
+        <ImageView
+            android:id="@+id/likeIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_favourite"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desciption_feed"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+         />
+
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16ssp"
+            android:text="20"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/likeIcon"
+            app:layout_constraintEnd_toStartOf="@+id/likeIcon"
+            app:layout_constraintTop_toTopOf="@+id/likeIcon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

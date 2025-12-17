@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "526882129642",
+    "firebase_url": "https://blogpulse-62749-default-rtdb.firebaseio.com",
+    "project_id": "blogpulse-62749",
+    "storage_bucket": "blogpulse-62749.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526882129642:android:8b4d52f1486ce22d4a7993",
+        "android_client_info": {
+          "package_name": "com.example.abhishek.project.blogpulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9g9eE8bbzMhHyBQBFECxsfxGNpVFeo3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Drag Handle (Material 3) -->
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Writing Assistant"
+                android:textSize="18sp"
+                android:layout_margin="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textColor="@color/app_black"/>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_color"/>
+
+        <!-- AI Options -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAiImprove"
+            style="@style/AiOptionButton"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="✨ Improve Writing"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAiRewrite"
+            style="@style/AiOptionButton"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="🔄 Rewrite Blog"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAiSummarize"
+            style="@style/AiOptionButton"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="📝 Summarize Content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAiGenerateTitle"
+            style="@style/AiOptionButton"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="💡 Generate Better Title"/>
+
+        <!-- Cancel -->
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/title_feed"
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/feed"
+            android:textColor="@color/app_dark_blue"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header_logo"
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/blog_logo"
+            app:civ_border_color="@color/app_light_blue"
+            app:civ_border_width="@dimen/_1sdp"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_feed"
+            app:tint="@color/app_white" />
+
+        <TextView
+            android:id="@+id/user_name_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="200dp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:text="@string/profile_name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/header_logo"
+            app:layout_constraintTop_toTopOf="@+id/header_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginEnd="224dp"
+            android:layout_marginBottom="8dp"
+            android:text="14/20/2025"
+            android:textColor="#BFB2B2"
+            app:layout_constraintBottom_toBottomOf="@id/line_item_feed"
+            app:layout_constraintEnd_toEndOf="@+id/line_item_feed" />
+
+        <TextView
+            android:id="@+id/line_item_feed"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_black"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/header_logo"
+            tools:layout_editor_absoluteX="6dp" />
+        <TextView
+            android:id="@+id/desciption_feed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_item_feed" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/app_dark_blue"
+            android:contentDescription="@string/create_feed"
+            android:src="@drawable/ic_add"
+            app:borderWidth="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/app_black" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/_16sdp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/app_dark_blue"
+            android:contentDescription="@string/create_feed"
+            android:src="@drawable/ic_favourite"
+            app:borderWidth="@dimen/_2sdp"
+            app:layout_constraintBottom_toTopOf="@+id/fab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/app_black" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

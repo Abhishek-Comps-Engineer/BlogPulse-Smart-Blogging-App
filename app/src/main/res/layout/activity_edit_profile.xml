@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main"
+    android:background="#F5F5F7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <!-- TOP USER IMAGE -->
+        <FrameLayout
+            android:id="@+id/frameProfile"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_22sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                app:cardCornerRadius="@dimen/_40sdp"
+                style="@style/round">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imgProfile"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile"
+               />
+
+
+            <ImageView
+                android:id="@+id/iconLock"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/bg_white_card"
+                android:src="@drawable/ic_camera" />
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+
+        <!-- BOTTOM WHITE CONTAINER -->
+        <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_container"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp"
+            android:elevation="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/frameProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Fullname -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/fullname"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/_12ssp"
+                android:layout_margin="@dimen/_8sdp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/blue_stroke"
+                android:padding="@dimen/_8sdp"
+                android:hint="Enter your full name"
+                android:textColor="#000"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:textSize="@dimen/_12ssp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_margin="@dimen/_8sdp"  />
+
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/blue_stroke"
+                android:padding="@dimen/_8sdp"
+                android:hint="+91 98765 43210"
+                android:inputType="phone"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+            <!-- Address Section -->
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Address and Location"
+                android:textColor="#000"
+                android:textSize="@dimen/_12ssp"
+                android:layout_margin="@dimen/_8sdp"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:hint="Mumbai, India"
+                android:background="@drawable/blue_stroke"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/_5sdp"
+                android:padding="@dimen/_8sdp"
+                android:textColor="#000"
+                android:textSize="@dimen/_12ssp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/_12ssp"
+                android:layout_margin="@dimen/_8sdp"/>
+
+            <EditText
+                android:id="@+id/etBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_60sdp"
+                android:background="@drawable/blue_stroke"
+                android:padding="@dimen/_8sdp"
+                android:hint="Tell something about yourself"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginBottom="@dimen/_12sdp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Save Changes"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textStyle="bold"
+                android:backgroundTint="@color/app_dark_blue"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

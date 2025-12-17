@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_color"
+    android:orientation="horizontal"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <!-- ================= CARD 1 : PROFILE SUMMARY ================= -->
+        <LinearLayout
+            android:id="@+id/cardProfileSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_16sdp"
+            android:background="@drawable/rectangle_bg"
+            android:elevation="@dimen/_4sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Profile Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:cardCornerRadius="@dimen/_45sdp">
+
+                <ImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Lewis Mariyati"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                android:textColor="@color/app_dark_blue" />
+
+
+            <!-- Edit -->
+            <TextView
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:paddingHorizontal="@dimen/_18sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                android:background="@drawable/edit_bg"
+                android:text="@string/edit"
+                android:textSize="@dimen/_12ssp"
+                android:drawableStart="@drawable/ic_edit"
+                android:drawablePadding="@dimen/_4sdp" />
+
+            <!-- Divider -->
+
+
+        </LinearLayout>
+
+        <!-- ================= CARD 2 : PROFILE DETAILS ================= -->
+        <LinearLayout
+            android:id="@+id/cardProfileDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp"
+            android:background="@drawable/rectangle_bg"
+            android:elevation="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/cardProfileSummary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Information"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/app_dark_blue" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@color/very_light_gray" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/text_dark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                android:text="lewis@gmail.com"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginBottom="@dimen/_10sdp" />
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/text_dark" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPhone"
+                android:text="+62 812 3456 7890"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginBottom="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/text_dark" />
+            <!-- Location -->
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Nganjuk, Indonesia"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="@dimen/_4sdp"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textColor="@color/app_black" />
+
+
+            <!-- Bio -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/text_dark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBio"
+                android:text="Android developer passionate about building clean and scalable apps."
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginBottom="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="Logout"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textColor="@color/app_white"
+                android:background="@drawable/btn_primary_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:foreground="?attr/selectableItemBackground"
+                android:elevation="@dimen/_4sdp" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

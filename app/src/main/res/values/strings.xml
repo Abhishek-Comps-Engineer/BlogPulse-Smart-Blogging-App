@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BlogPulse</string>
+    <string name="slogen">Share your thoughts with the world\t</string>
+    <string name="join_blogpulse">Join BlogPulse</string>
+    <string name="create_account">Create your account to get started.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feed">Feed</string>
+    <string name="favourite">Favourite</string>
+    <string name="search_here">Search here…</string>
+    <string name="new_feed">New Feeds</string>
+    <string name="description_text">Description Text</string>
+    <string name="new_nblogger">New\nBlogger</string>
+    <string name="read_more">Read More</string>
+    <string name="create_feed">Create Feed</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="back">Back</string>
+    <string name="edit">Edit</string>
+    <string name="fullname">Fullname</string>
+    <string name="add_blog">AddBlog</string>
+</resources>
