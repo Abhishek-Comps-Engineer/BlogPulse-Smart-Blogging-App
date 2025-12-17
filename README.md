@@ -45,9 +45,16 @@ BlogPulse uses Gemini AI to:
 
 ---
 ## Screenshots 
-<img width="486" height="1080" alt="Screenshot_20251217_114318" src="https://github.com/user-attachments/assets/3766c75d-0473-40c6-81db-d370f545c634" /> <img width="486" height="1080" alt="Screenshot_20251217_113010" src="https://github.com/user-attachments/assets/f1767d12-d5a6-4f28-bb77-484c8a8ac3ca" />
-<img width="486" height="1080" alt="Screenshot_20251217_114024" src="https://github.com/user-attachments/assets/ae8b44d9-e2c1-44da-8ebe-e1ec4456c0fa" /> <img width="486" height="1080" alt="Screenshot_20251217_114448" src="https://github.com/user-attachments/assets/1d8e42a7-479d-445d-95a0-9b1ff1a40bb0" />
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3766c75d-0473-40c6-81db-d370f545c634" width="45%" />
+  <img src="https://github.com/user-attachments/assets/f1767d12-d5a6-4f28-bb77-484c8a8ac3ca" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ae8b44d9-e2c1-44da-8ebe-e1ec4456c0fa" width="45%" />
+  <img src="https://github.com/user-attachments/assets/1d8e42a7-479d-445d-95a0-9b1ff1a40bb0" width="45%" />
+</p>
 ---
 
 ## 🔧 Setup Instructions
